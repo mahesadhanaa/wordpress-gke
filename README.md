@@ -3,3 +3,5 @@
 1. create cluster in GKE
 2. install google SDK
 3. run deploy.sh
+
+note for scalling deployment, we can add replicas in deployment.yaml
