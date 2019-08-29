@@ -8,8 +8,8 @@ kubectl apply -f wp-yaml/
 external_ip=""
 service="wordpress"
 while [ -z $external_ip ]; do
- echo "Waiting for end point..."
+ echo "tunggu sampai deploy selesai ..."
  external_ip=$(kubectl get svc $service --template="{{range .status.loadBalancer.ingress}}{{.ip}}{{end}}")
  [ -z "$external_ip" ] && sleep 10
 done
-echo 'End point ready:' && echo $external_ip
+echo 'ini url web nya:' && echo $external_ip
