@@ -7,4 +7,5 @@
 note for scalling deployment, we can add replicas in deployment.yaml or use thi command :
 
 kubectl scale --current-replicas=2 --replicas=3 deployment/mysql
+
 kubectl scale --current-replicas=2 --replicas=3 deployment/wordpress
